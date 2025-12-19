@@ -1,18 +1,39 @@
 # demo-java
 
-This is a demo Java Gradle project.
+This is a minimal example project to demonstrate the Java + Gradle development workflow - a starting point for learning or testing the build system.
+- **Main class**: `com.example.demo.App`
+- **Main method**: Prints "Hello World!" to the console when executed
+- **Helper method**: `getGreeting()` returns "Hello World!" (used for testing)
+- **Tests**: Unit tests verify that `getGreeting()` works correctly
 
-## Created Files
+## Project Structure
 
-- **build.gradle**: Gradle build script.
-- **settings.gradle**: Gradle settings file.
-- **App.java**: Main application class with a `main` method and a `getGreeting` method.
-- **AppTest.java**: Unit test ensuring `App` works as expected.
+```
+demo-java/
+├── build.gradle      # Gradle build script
+├── settings.gradle   # Gradle settings file
+├── gradlew          # Gradle wrapper script (Unix)
+├── gradlew.bat      # Gradle wrapper script (Windows)
+├── gradle/
+│   └── wrapper/     # Gradle wrapper files
+└── src/
+    ├── main/
+    │   └── java/
+    │       └── App.java      # Main application class
+    └── test/
+        └── java/
+            └── AppTest.java  # Unit tests
+```
 
 ## Prerequisites
-- Java JDK 17 or higher (Tested with OpenJDK 25)
+
+- **Java JDK 17 or higher**
   - **Note**: Java 25 requires Gradle 9.0 or higher.
-- Gradle 7.6 or higher (Tested with Gradle 9.2.1)
+- **Gradle 7.6 or higher**
+
+Tested with:
+- Java: `OpenJDK 25`
+- Gradle: `9.2.1`
 
 ## Setup
 First, generate the Gradle wrapper scripts:
