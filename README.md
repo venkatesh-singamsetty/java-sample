@@ -10,8 +10,9 @@ This is a simple Java Gradle project.
 - **AppTest.java**: Unit test ensuring `App` works as expected.
 
 ## Prerequisites
-- Java JDK 17 or higher
-- Gradle 7.0 or higher (for initial setup only)
+- Java JDK 17 or higher (Tested with OpenJDK 25)
+  - **Note**: Java 25 requires Gradle 9.0 or higher.
+- Gradle 7.6 or higher (Tested with Gradle 9.2.1)
 
 ## Setup
 First, generate the Gradle wrapper scripts:
